@@ -50,7 +50,7 @@ ls /home/
 
 ## Parte 2: Gestión de grupos
 
-**1. Creación de grupos**
+**1. Creación de grupos.** 
 Crea dos grupos llamados `grupo1` y `grupo2`. Comando utilizado:
 
 						`sudo groupadd <GROUP>'
@@ -60,14 +60,14 @@ grep 'grupo1\|grupo2' /etc/group
    **Resultado:**
   ![Figura 6. Ejecución](images/im6.png)
 
-**2. Agregar usuarios a grupos**
+**2. Agregar usuarios a grupos.** 
 Agrega `usuario1` a `grupo1` y `usuario2` a `grupo2`. Comando utilizado:
 
 						`sudo usermod -aG <GROUP> <USER>'
 > **-a :  Añade el usuario al grupo sin eliminarlo de otros grupos a los que ya pertenezca.
 >  -G: Especifica el grupo o los grupos a los que se debe añadir el usuario.**
 
-**3. Verificar membresía**
+**3. Verificar membresía.** 
 Verifica que los usuarios han sido agregados a los grupos utilizando el comando `groups`. Comando utilizado:
 
 						`groups <USER>'
@@ -75,7 +75,7 @@ Verifica que los usuarios han sido agregados a los grupos utilizando el comando 
    **Resultado:**
   ![Figura 7. Ejecución](images/im7.png)
 
-**4. Eliminar grupo**
+**4. Eliminar grupo.** 
 Elimina `grupo2`. Comando utilizado:
 
 						`sudo groupdel <GROUP>'
@@ -86,14 +86,17 @@ grep 'grupo2' /etc/group ---> Si no hay salida se eliminó correctamente
   ![Figura 8. Ejecución](images/im8.png)
 
 ## Parte 3: Gestión de permisos
-**1. Creación de archivos y directorios**
+**1. Creación de archivos y directorios.**  
 -   Como `usuario1`, crea un archivo llamado `archivo1.txt` en su directorio principal y escribe algo en él.
 -   Crea un directorio llamado `directorio1` y dentro de ese directorio, un archivo llamado `archivo2.txt`.
 
 Comandos utilizados:
+
+
 `sudo -u usuario1 bash -c 'echo "Hola.txt" > /home/usuario1/archivo1.txt'`
 
 `sudo -u usuario1 mkdir /home/usuario1/directorio1`
+
 `sudo -u usuario1 touch /home/usuario1/directorio1/archivo2.txt`
 
 **2. Verificar permisos**
