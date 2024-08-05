@@ -99,9 +99,11 @@ Comandos utilizados:
 
 `sudo -u usuario1 touch /home/usuario1/directorio1/archivo2.txt`
 
-**2. Verificar permisos**
+**2. Verificar permisos.**  
 Verifica los permisos del archivo y directorio usando el comando `ls -l` y `ls -ld` respectivamente. Comandos utilizados:
+
 `sudo ls -l /home/usuario1/archivo1.txt`
+
 `sudo ls -ld /home/usuario1/directorio1`
 
 -   **`ls -l`**: Lista los archivos en un formato largo, mostrando permisos, número de enlaces, propietario, grupo, tamaño, fecha y nombre del archivo.
@@ -112,7 +114,8 @@ Verifica los permisos del archivo y directorio usando el comando `ls -l` y `ls -
   
 > **Desglose de la Salida**
 
-1.  **Permisos: `-rw-rw-r--`**
+1.  **Permisos: `-rw-rw-r--`:**
+
 	Tipo de archivo. `-` significa archivo regular.
 	
     Permisos del propietario (usuario1):
@@ -127,7 +130,8 @@ Verifica los permisos del archivo y directorio usando el comando `ls -l` y `ls -
      Número de enlaces al archivo (generalmente `1` para archivos regulares)
     Tamaño del archivo en bytes (15 bytes).
 
-2.  **Permisos: `drwxrwxr-x`**
+2.  **Permisos: `drwxrwxr-x`:**
+
     El primer carácter indica el tipo de archivo. `d` significa directorio.  
   Permisos del propietario (usuario1):  `r`, lectura;`w`, escritura y  `x`, ejecución.
   Permisos del grupo (usuario1):  `r`, lectura;`w`, escritura y  `x`, ejecución.
@@ -139,7 +143,7 @@ Verifica los permisos del archivo y directorio usando el comando `ls -l` y `ls -
 	
     Tamaño del directorio en bytes (4096 bytes).
 
-**3. Modificar Permisos usando `chmod` con Modo Numérico**
+**3. Modificar Permisos usando `chmod` con Modo Numérico.** 
 Cambia los permisos del `archivo1.txt` para que sólo `usuario1` pueda leer y escribir (permisos `rw-`), el grupo pueda leer (permisos `r--`) y nadie más pueda hacer nada.
 
 Comando utilizado:
@@ -153,7 +157,7 @@ Comando utilizado:
    **Resultado:**
   ![Figura 12. Ejecución](images/im12.png)
 
-**4. Modificar Permisos usando `chmod` con Modo Simbólico**
+**4. Modificar Permisos usando `chmod` con Modo Simbólico.**
  Agrega permiso de ejecución al propietario del `archivo2.txt`. Comando utilizado:
  
 			`chmod u+x /home/usuario1/directorio1/archivo2.txt'
@@ -178,14 +182,14 @@ Comando utilizado:
  **Resultado:**
  ![Figura 13. Ejecución](images/im13.png)
 
-**5. Cambiar el Grupo Propietario**
+**5. Cambiar el Grupo Propietario.** 
 Cambia el grupo propietario de `archivo2.txt` a `grupo1`. Comando utilizado:
  
 			`chgrp <nuevo_grupo> <archivo_o_directorio>'
  **Resultado:**
  ![Figura 14. Ejecución](images/im14.png)
 
-**6. Configurar Permisos de Directorio**
+**6. Configurar Permisos de Directorio.** 
 Cambia los permisos del `directorio1` para que sólo el propietario pueda entrar (permisos `rwx`), el grupo pueda listar contenidos pero no entrar (permisos `r--`), y otros no puedan hacer nada.
 Comando utilizado:
  
@@ -193,7 +197,7 @@ Comando utilizado:
  **Resultado:**
  ![Figura 15. Ejecución](images/im15.png)
 
-**7. Comprobación de Acceso**
+**7. Comprobación de Acceso.** 
 Intenta acceder al `archivo1.txt` y `directorio1/archivo2.txt` como `usuario2`. Nota cómo el permiso de directorio afecta el acceso a los archivos dentro de él.
 Comando utilizado:
  
@@ -202,17 +206,19 @@ Comando utilizado:
  **Resultado:**
   ![Figura 16. Ejecución](images/im16.png)
 
-**8. Verificación final**
+**8. Verificación final.** 
 Verifica los permisos y propietario de los archivos y directorio nuevamente con `ls -l` y `ls -ld`. Comandos utilizados:
 
-`			sudo ls -l /home/usuario1/archivo1.txt           	`
-`			sudo ls -ld /home/usuario1/directorio1				`
+`sudo ls -l /home/usuario1/archivo1.txt`
+
+`sudo ls -ld /home/usuario1/directorio1`
 
  **Resultado:**
 	 ![Figura 17. Ejecución](images/im17.png)
 	 
 ## Reflexión
 **¿Por qué es importante gestionar correctamente los usuarios y permisos en un sistema operativo?** 
+
 Gestionar correctamente usuarios y permisos es importante para garantizar la **seguridad** del sistema, proteger la **privacidad** de los datos. Una buena gestión permite mantener la **integridad** del sistema evitando cambios no deseados o no autorizados y asegurar un **control** eficiente sobre los accesos.
 
 **¿Qué otros comandos o técnicas conocen para gestionar permisos en Linux?**
