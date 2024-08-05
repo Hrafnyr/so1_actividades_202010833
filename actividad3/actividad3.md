@@ -11,6 +11,7 @@ Sistemas Operativos 1
 
 ## Parte 1: Gestión de usuarios. 
 **1. Creación de usuarios.** 
+
 Crea tres usuarios llamados `usuario1`, `usuario2` y `usuario3`. Comando utilizado:
 
 > **Crear el usuario, su directorio home y asignar el shell**
@@ -22,6 +23,7 @@ Crea tres usuarios llamados `usuario1`, `usuario2` y `usuario3`. Comando utiliza
    ![Figura 2. Ejecución](images/im2.png)
 
 **2. Asignación de contraseñas.** 
+
 Establece una nueva contraseñas para cada usuario creado. Comando utilizado:
 > **Al ejecutar se solicita la contraseña y su confirmación (No menor a 8 caracteres)**
 
@@ -31,6 +33,7 @@ Establece una nueva contraseñas para cada usuario creado. Comando utilizado:
   ![Figura 3. Ejecución](images/im3.png)
  
 **3. Información de usuarios.** 
+
 Muestra la información de `usuario1` usando el comando `id`.  Comando utilizado:
 
 						`id <USER>'
@@ -38,6 +41,7 @@ Muestra la información de `usuario1` usando el comando `id`.  Comando utilizado
   ![Figura 4. Ejecución](images/im4.png)
 
 **4. Eliminación de usuarios.** 
+
 Elimina `usuario3`, pero conserva su directorio principal. Comando utilizado:
 
 						`sudo userdel <USER>'
@@ -51,6 +55,7 @@ ls /home/
 ## Parte 2: Gestión de grupos
 
 **1. Creación de grupos.** 
+
 Crea dos grupos llamados `grupo1` y `grupo2`. Comando utilizado:
 
 						`sudo groupadd <GROUP>'
@@ -61,6 +66,7 @@ grep 'grupo1\|grupo2' /etc/group
   ![Figura 6. Ejecución](images/im6.png)
 
 **2. Agregar usuarios a grupos.** 
+
 Agrega `usuario1` a `grupo1` y `usuario2` a `grupo2`. Comando utilizado:
 
 						`sudo usermod -aG <GROUP> <USER>'
@@ -68,6 +74,7 @@ Agrega `usuario1` a `grupo1` y `usuario2` a `grupo2`. Comando utilizado:
 >  -G: Especifica el grupo o los grupos a los que se debe añadir el usuario.**
 
 **3. Verificar membresía.** 
+
 Verifica que los usuarios han sido agregados a los grupos utilizando el comando `groups`. Comando utilizado:
 
 						`groups <USER>'
@@ -76,6 +83,7 @@ Verifica que los usuarios han sido agregados a los grupos utilizando el comando 
   ![Figura 7. Ejecución](images/im7.png)
 
 **4. Eliminar grupo.** 
+
 Elimina `grupo2`. Comando utilizado:
 
 						`sudo groupdel <GROUP>'
@@ -144,6 +152,7 @@ Verifica los permisos del archivo y directorio usando el comando `ls -l` y `ls -
     Tamaño del directorio en bytes (4096 bytes).
 
 **3. Modificar Permisos usando `chmod` con Modo Numérico.** 
+
 Cambia los permisos del `archivo1.txt` para que sólo `usuario1` pueda leer y escribir (permisos `rw-`), el grupo pueda leer (permisos `r--`) y nadie más pueda hacer nada.
 
 Comando utilizado:
@@ -158,6 +167,7 @@ Comando utilizado:
   ![Figura 12. Ejecución](images/im12.png)
 
 **4. Modificar Permisos usando `chmod` con Modo Simbólico.**
+
  Agrega permiso de ejecución al propietario del `archivo2.txt`. Comando utilizado:
  
 			`chmod u+x /home/usuario1/directorio1/archivo2.txt'
@@ -183,6 +193,7 @@ Comando utilizado:
  ![Figura 13. Ejecución](images/im13.png)
 
 **5. Cambiar el Grupo Propietario.** 
+
 Cambia el grupo propietario de `archivo2.txt` a `grupo1`. Comando utilizado:
  
 			`chgrp <nuevo_grupo> <archivo_o_directorio>'
@@ -190,6 +201,7 @@ Cambia el grupo propietario de `archivo2.txt` a `grupo1`. Comando utilizado:
  ![Figura 14. Ejecución](images/im14.png)
 
 **6. Configurar Permisos de Directorio.** 
+
 Cambia los permisos del `directorio1` para que sólo el propietario pueda entrar (permisos `rwx`), el grupo pueda listar contenidos pero no entrar (permisos `r--`), y otros no puedan hacer nada.
 Comando utilizado:
  
@@ -198,6 +210,7 @@ Comando utilizado:
  ![Figura 15. Ejecución](images/im15.png)
 
 **7. Comprobación de Acceso.** 
+
 Intenta acceder al `archivo1.txt` y `directorio1/archivo2.txt` como `usuario2`. Nota cómo el permiso de directorio afecta el acceso a los archivos dentro de él.
 Comando utilizado:
  
@@ -207,6 +220,7 @@ Comando utilizado:
   ![Figura 16. Ejecución](images/im16.png)
 
 **8. Verificación final.** 
+
 Verifica los permisos y propietario de los archivos y directorio nuevamente con `ls -l` y `ls -ld`. Comandos utilizados:
 
 `sudo ls -l /home/usuario1/archivo1.txt`
