@@ -9,8 +9,8 @@ Sistemas Operativos 1
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tarea 3  
 -
 
-## Parte 1: Gestión de usuarios
-**1. Creación de usuarios**
+## Parte 1: Gestión de usuarios. 
+**1. Creación de usuarios.** 
 Crea tres usuarios llamados `usuario1`, `usuario2` y `usuario3`. Comando utilizado:
 
 > **Crear el usuario, su directorio home y asignar el shell**
@@ -21,7 +21,7 @@ Crea tres usuarios llamados `usuario1`, `usuario2` y `usuario3`. Comando utiliza
    ![Figura 1. Comando para listar usuarios](images/im1.png)
    ![Figura 2. Ejecución](images/im2.png)
 
-**2. Asignación de contraseñas**
+**2. Asignación de contraseñas.** 
 Establece una nueva contraseñas para cada usuario creado. Comando utilizado:
 > **Al ejecutar se solicita la contraseña y su confirmación (No menor a 8 caracteres)**
 
@@ -30,14 +30,14 @@ Establece una nueva contraseñas para cada usuario creado. Comando utilizado:
    **Resultado:**
   ![Figura 3. Ejecución](images/im3.png)
  
-**3. Información de usuarios**
- Muestra la información de `usuario1` usando el comando `id`.  Comando utilizado:
+**3. Información de usuarios.** 
+Muestra la información de `usuario1` usando el comando `id`.  Comando utilizado:
 
 						`id <USER>'
    **Resultado:**
   ![Figura 4. Ejecución](images/im4.png)
 
-**4. Eliminación de usuarios**
+**4. Eliminación de usuarios.** 
 Elimina `usuario3`, pero conserva su directorio principal. Comando utilizado:
 
 						`sudo userdel <USER>'
