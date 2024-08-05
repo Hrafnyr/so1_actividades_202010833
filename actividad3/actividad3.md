@@ -1,12 +1,12 @@
 
 
-Universidad de San Carlos de Guatemala 
-Facultad de Ingeniería
-Escuela de Ciencias y Sistemas
-Sistemas Operativos 1
+Universidad de San Carlos de Guatemala  
+Facultad de Ingeniería  
+Escuela de Ciencias y Sistemas  
+Sistemas Operativos 1  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moises David Maldonado de León - 202010833
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tarea 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moises David Maldonado de León - 202010833  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tarea 3  
 -
 
 ## Parte 1: Gestión de usuarios
@@ -209,7 +209,7 @@ Verifica los permisos y propietario de los archivos y directorio nuevamente con 
 	 ![Figura 17. Ejecución](images/im17.png)
 	 
 ## Reflexión
-**¿Por qué es importante gestionar correctamente los usuarios y permisos en un sistema operativo?**
+**¿Por qué es importante gestionar correctamente los usuarios y permisos en un sistema operativo?** 
 Gestionar correctamente usuarios y permisos es importante para garantizar la **seguridad** del sistema, proteger la **privacidad** de los datos. Una buena gestión permite mantener la **integridad** del sistema evitando cambios no deseados o no autorizados y asegurar un **control** eficiente sobre los accesos.
 
 **¿Qué otros comandos o técnicas conocen para gestionar permisos en Linux?**
