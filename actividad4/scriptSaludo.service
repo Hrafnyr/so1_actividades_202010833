@@ -1,0 +1,10 @@
+
+[Unit] 
+Description=Saludo al iniciar el sistema 
+    
+[Service] 
+Type=simple 
+ExecStart=/usr/local/bin/scriptSaludo.sh 
+    
+[Install] 
+WantedBy=multi-user.target
