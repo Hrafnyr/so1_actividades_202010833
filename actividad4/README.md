@@ -1,8 +1,11 @@
 
 
 Universidad de San Carlos de Guatemala 
+
 Facultad de Ingeniería
+
 Escuela de Ciencias y Sistemas
+
 Sistemas Operativos 1
 
 
