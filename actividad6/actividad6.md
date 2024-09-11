@@ -14,7 +14,9 @@ Se tiene el siguiente código en C:
 ![codigo](images/im.png)
 
 > **Para compilar y ejecutar:**
+
 > `gcc proceso.c -o procesoZ`
+
 > `./procesoZ`
 
 ## Explicación del código
