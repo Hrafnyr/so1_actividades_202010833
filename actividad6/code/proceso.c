@@ -11,7 +11,7 @@ int main(){
     if(pid_ejemplo > 0){
         
         //Proceso padre: Dormir para simular proceso zombie
-        sleep(30);
+        sleep(60);
 
     } else if (pid_ejemplo == 0){
 
