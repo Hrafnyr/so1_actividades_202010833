@@ -7,7 +7,7 @@ Escuela de Ciencias y Sistemas
 
 Sistemas Operativos 1
 
-# ACTIVIDAD #7
+# ACTIVIDAD #8
 
 ##  Primeros pasos con K8s
 
